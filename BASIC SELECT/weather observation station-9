@@ -1,0 +1,16 @@
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY,1) NOT IN ('A','E','I','O','U','a','e','i','o','u');
+
+OR
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY NOT LIKE 'a%' AND
+CITY NOT LIKE 'e%' AND
+CITY NOT LIKE 'i%' AND
+CITY NOT LIKE 'o%' AND
+a#nd so on...
+# you will also have to take 'A', 'E', ...
+
+
